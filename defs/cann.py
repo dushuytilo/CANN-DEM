@@ -11,12 +11,9 @@ class CANN(nn.Module):
     """Constitutive Artificial Neural Network for Neo-Hookean energy prediction
 
     Parameters
-    input_dim : int
-        Number of input features. For this project: I1 and J -> 2
-    hidden_dim : int
-        Total width of each hidden layer. Must be even because each hidden layer is split equally between two transformation types
-    output_dim : int
-        Number of outputs. For this project: Psi -> 1
+    input_dim: int Number of input features. For this project: I1 and J -> 2
+    hidden_dim: int Total width of each hidden layer. Must be even because each hidden layer is split equally between two transformation types
+    output_dim : int Number of outputs. For this project: Psi -> 1
     """
 
     def __init__(self, input_dim=2, hidden_dim=32, output_dim=1):
